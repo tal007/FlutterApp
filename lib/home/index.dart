@@ -10,7 +10,7 @@ class HomeList extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+          // padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
           child: new ListView(
             children: <Widget>[
               new Item(text: 'MaterialApp'),

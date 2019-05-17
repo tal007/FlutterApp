@@ -8,7 +8,8 @@ class Item extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.fromLTRB(0, 20, 0, 20),
+      padding: EdgeInsets.all(20),
+      margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
       decoration: new BoxDecoration(
         border: Border.all(
           width: 1,
