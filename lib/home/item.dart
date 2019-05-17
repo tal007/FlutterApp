@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../materialApp/index.dart';
 
 void main() => runApp(Item());
 
@@ -17,13 +18,20 @@ class Item extends StatelessWidget {
         )
       ),
       // color: Colors.cyan,
-      child: Text(
-        text,
-        style: TextStyle(
-          fontSize: 26,
-          color: Colors.blue
+      child: RaisedButton(
+        onPressed: (){
+          Navigator.push(context, new MaterialPageRoute(
+            builder: (context) => new MaterialAppInfo()
+          ));
+        },
+        child: Text(
+          text,
+          style: TextStyle(
+            fontSize: 26,
+            color: Colors.blue
+          ),
         ),
-      ),
+      )
     );
   }
 }

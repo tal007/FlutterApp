@@ -14,7 +14,16 @@ class HomeList extends StatelessWidget {
           child: new ListView(
             children: <Widget>[
               new Item(text: 'MaterialApp'),
-              new Item(text: 'Scaffold')
+              new Item(text: 'Scaffold'),
+              new Item(text: 'Scaffold'),
+              new Item(text: 'Scaffold'),
+              new Item(text: 'Scaffold'),
+              new Item(text: 'Scaffold'),
+              new Item(text: 'Scaffold'),
+              new Item(text: 'Scaffold'),
+              new Item(text: 'Scaffold'),
+              new Item(text: 'Scaffold'),
+              new Item(text: 'Scaffold'),
             ],
           )
         ),
