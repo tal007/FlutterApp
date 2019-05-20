@@ -24,6 +24,12 @@ class HomeList extends StatelessWidget {
   Widget build(BuildContext context){
     return MaterialApp(
       home: Scaffold(
+        //创建一个Bar，并添加文本
+        appBar: AppBar(
+          title:Text('Welcome to Flutter'),
+          centerTitle: true,
+          // backgroundColor: Colors.purple,
+        ),
         body: Container(
           // padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
           child: new ListView.builder(

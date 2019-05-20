@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../materialApp/index.dart';
+import '../MaterialApp/index.dart';
+import '../Scaffold/index.dart';
 
 void main() => runApp(Item());
 
@@ -21,7 +22,8 @@ class Item extends StatelessWidget {
       child: RaisedButton(
         onPressed: (){
           Navigator.push(context, new MaterialPageRoute(
-            builder: (context) => new MaterialAppInfo()
+            builder: (context) => new MaterialAppInfo(title: text),
+            // fullscreenDialog: true
           ));
         },
         child: Text(

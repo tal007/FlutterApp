@@ -1,10 +1,10 @@
 // 首页的ListView组件
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialAppInfo());
+void main() => runApp(ScaffoldInfo());
 
-class MaterialAppInfo extends StatelessWidget {
-  MaterialAppInfo({Key key, this.title}) : super(key: key);
+class ScaffoldInfo extends StatelessWidget {
+  ScaffoldInfo({Key key, this.title}) : super(key: key);
   final String title;
   @override
   Widget build(BuildContext context){
@@ -12,14 +12,6 @@ class MaterialAppInfo extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(title),
-          leading: IconButton(
-            onPressed: (){
-              Navigator.pop(context);
-            },
-            icon: Icon(
-              Icons.arrow_back_ios,
-            ),
-          )
         ),
         body: Container(
           // padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
