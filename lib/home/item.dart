@@ -10,29 +10,28 @@ class Item extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20),
-      margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
-      decoration: new BoxDecoration(
-        border: Border.all(
-          width: 1,
-          color: Colors.grey
-        )
-      ),
-      // color: Colors.cyan,
-      child: RaisedButton(
+      child: FlatButton(
         onPressed: (){
-          Navigator.push(context, new MaterialPageRoute(
-            builder: (context) => new MaterialAppInfo(title: text),
-            // fullscreenDialog: true
-          ));
+          Navigator.pushNamed(context, 'materialAppInfo');
         },
-        child: Text(
-          text,
-          style: TextStyle(
-            fontSize: 26,
-            color: Colors.blue
-          ),
-        ),
+        child: Column(
+          children: <Widget>[
+            Text(
+              text,
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.blue
+              ),
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.blue
+              ),
+            ),
+          ],
+        )
       )
     );
   }
