@@ -27,6 +27,12 @@ class HomeList extends StatelessWidget {
       appBar: AppBar(
         title:Text('Welcome to Flutter'),
         centerTitle: true,
+        leading: IconButton(
+          icon: Icon(
+            Icons.list
+          ),
+          
+        ),
         // backgroundColor: Colors.purple,
       ),
       body: Container(
