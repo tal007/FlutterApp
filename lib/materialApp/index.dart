@@ -31,6 +31,13 @@ class MaterialAppInfo extends StatelessWidget {
                 Text("正如Flutter官网上面说的一样，MaterialApp是一个非常方便的widget，里面封装了应用程序实现Material Design所需要的widget。"),
                 Text("我们可以使用这个组件设置一些App配置，比如App的主题色，App的路由，App的语言读取等等。我们来看看他有哪些属性呢？"),
                 CustomTitle(title: '属性说明'),
+                Column(
+                  children: <Widget>[
+                    Text('color：设置App的主题色'),
+                    Text('color：设置App的主题色'),
+                    Text('color：设置App的主题色'),
+                  ],
+                )
               ],
             ),
           ],

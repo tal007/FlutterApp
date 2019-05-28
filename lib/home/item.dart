@@ -12,7 +12,8 @@ class Item extends StatelessWidget {
     return Container(
       child: FlatButton(
         onPressed: (){
-          Navigator.pushNamed(context, 'materialAppInfo');
+          // 动态的跳转路由
+          Navigator.pushNamed(context, '$text'+'Info');
         },
         child: Column(
           children: <Widget>[
@@ -20,7 +21,7 @@ class Item extends StatelessWidget {
               text,
               style: TextStyle(
                 fontSize: 20,
-                color: Colors.blue
+                color: Color.fromARGB(128, 11, 31, 31)
               ),
             ),
             Text(
