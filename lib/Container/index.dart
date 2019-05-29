@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../common/CustomTitle.dart';
 import './Alignment.dart';
 import './Transform.dart';
+import './BoxDecoration.dart';
 
 void main() => runApp(ContainerInfo());
 
@@ -19,7 +20,7 @@ class ContainerInfo extends StatelessWidget {
       body: SingleChildScrollView(
         child: Container(
           margin: EdgeInsets.symmetric(
-            vertical: 10,
+            vertical: 30,
             horizontal: 20
           ),
           child: Column(
@@ -28,7 +29,10 @@ class ContainerInfo extends StatelessWidget {
               AlignmentInfo(),
               Divider(color: Colors.grey),
               Center(child: CustomTitle(title: 'Transform')),
-              TransformInfo()
+              TransformInfo(),
+              Divider(color: Colors.grey),
+              Center(child: CustomTitle(title: 'BoxDecoration')),
+              BoxDecorationInfo()
             ],
           ),
         )

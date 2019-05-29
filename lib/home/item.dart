@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import '../MaterialApp/index.dart';
-import '../Scaffold/index.dart';
 
 void main() => runApp(Item());
 
