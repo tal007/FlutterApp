@@ -12,8 +12,8 @@ class AlignmentInfo extends StatefulWidget {
 
 class _AlignmentInfo extends State<AlignmentInfo> {
   Object position = Alignment.center;
-  double _X = 0.0;
-  double _Y = 0.0;
+  double _xCrood = 0.0;
+  double _yCrood = 0.0;
   
   @override
   Widget build(BuildContext context) {
@@ -41,24 +41,24 @@ class _AlignmentInfo extends State<AlignmentInfo> {
                 child: Text('topLeft'),
                 onPressed: () => setState(() {
                   this.position = Alignment.topLeft;
-                  this._X = -1.0;
-                  this._Y = -1.0;
+                  this._xCrood = -1.0;
+                  this._yCrood = -1.0;
                 }),
               ),
               RaisedButton(
                 child: Text('topCenter'),
                 onPressed: () => setState(() {
                   this.position = Alignment.topCenter;
-                  this._X = 0.0;
-                  this._Y = -1.0;
+                  this._xCrood = 0.0;
+                  this._yCrood = -1.0;
                 }),
               ),
               RaisedButton(
                 child: Text('topRight'),
                 onPressed: () => setState(() {
                   this.position = Alignment.topRight;
-                  this._X = 1.0;
-                  this._Y = -1.0;
+                  this._xCrood = 1.0;
+                  this._yCrood = -1.0;
                 }),
               )
             ]
@@ -70,24 +70,24 @@ class _AlignmentInfo extends State<AlignmentInfo> {
                 child: Text('centerLeft'),
                 onPressed: () => setState(() {
                   this.position = Alignment.centerLeft;
-                  this._X = -1.0;
-                  this._Y = 0.0;
+                  this._xCrood = -1.0;
+                  this._yCrood = 0.0;
                 }),
               ),
               RaisedButton(
                 child: Text('center'),
                 onPressed: () => setState(() {
                   this.position = Alignment.center;
-                  this._X = 0.0;
-                  this._Y = 0.0;
+                  this._xCrood = 0.0;
+                  this._yCrood = 0.0;
                 }),
               ),
               RaisedButton(
                 child: Text('centerRight'),
                 onPressed: () => setState(() {
                   this.position = Alignment.centerRight;
-                  this._X = 1.0;
-                  this._Y = 0.0;
+                  this._xCrood = 1.0;
+                  this._yCrood = 0.0;
                 }),
               )
             ]
@@ -99,24 +99,24 @@ class _AlignmentInfo extends State<AlignmentInfo> {
                 child: Text('bottomLeft'),
                 onPressed: () => setState(() {
                   this.position = Alignment.bottomLeft;
-                  this._X = -1.0;
-                  this._Y = 1.0;
+                  this._xCrood = -1.0;
+                  this._yCrood = 1.0;
                 }),
               ),
               RaisedButton(
                 child: Text('bottomCenter'),
                 onPressed: () => setState(() {
                   this.position = Alignment.bottomCenter;
-                  this._X = 0.0;
-                  this._Y = 1.0;
+                  this._xCrood = 0.0;
+                  this._yCrood = 1.0;
                 }),
               ),
               RaisedButton(
                 child: Text('bottomRight'),
                 onPressed: () => setState(() {
                   this.position = Alignment.bottomRight;
-                  this._X = 1.0;
-                  this._Y = 1.0;
+                  this._xCrood = 1.0;
+                  this._yCrood = 1.0;
                 }),
               )
             ]
@@ -124,25 +124,25 @@ class _AlignmentInfo extends State<AlignmentInfo> {
           Container(margin: EdgeInsets.all(10)),
           Text('Alignment X 的坐标'),
           Slider(
-            value: _X,
+            value: _xCrood,
             min: -1.0,
             max: 1.0,
             onChanged: (double value) {
               this.setState(() {
-                this._X = value;
-                this.position = Alignment(value, _Y);
+                this._xCrood = value;
+                this.position = Alignment(value, _yCrood);
               });
             },
           ),
           Text('Alignment Y 的坐标'),
           Slider(
-            value: _Y,
+            value: _yCrood,
             min: -1.0,
             max: 1.0,
             onChanged: (double value) {
               this.setState(() {
-                this._Y = value;
-                this.position = Alignment(_X, value);
+                this._yCrood = value;
+                this.position = Alignment(_xCrood, value);
               });
             },
           )

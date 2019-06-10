@@ -8,14 +8,14 @@ var list = [
   "MaterialApp",
   "Scaffold",
   "Container",
-  "Row",
+  "Row and Column",
+  "Image",
+  "Text",
+  "Icon",
   "Scaffold",
-  "Scaffold",
-  "Scaffold",
-  "Scaffold",
-  "Scaffold",
-  "Scaffold",
-  "Scaffold",
+  "Appbar",
+  "FlutterLogo",
+  "Placeholder",
   "Scaffold",
 ];
 
@@ -31,7 +31,9 @@ class HomeList extends StatelessWidget {
           icon: Icon(
             Icons.list
           ),
-          
+          onPressed: (){
+            AlertDialog(title: Text("1"));
+          },
         ),
         // backgroundColor: Colors.purple,
       ),

@@ -13,23 +13,13 @@ class Item extends StatelessWidget {
           // 动态的跳转路由
           Navigator.pushNamed(context, '$text'+'Info');
         },
-        child: Column(
-          children: <Widget>[
-            Text(
-              text,
-              style: TextStyle(
-                fontSize: 20,
-                color: Color.fromARGB(128, 11, 31, 31)
-              ),
-            ),
-            Text(
-              text,
-              style: TextStyle(
-                fontSize: 14,
-                color: Colors.blue
-              ),
-            ),
-          ],
+        child: ListTile(
+          leading: Icon(Icons.star),
+          title: Text(text, style: TextStyle(
+            fontWeight: FontWeight.w600
+          )),
+          subtitle: Text("Flutter Widget $text 说明"),
+          trailing: Icon(Icons.arrow_forward_ios),
         )
       )
     );

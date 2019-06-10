@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/common/CustomTitle.dart';
+import './RowAndColumn.dart';
 
 void main() => runApp(RowAndColumnInfo());
 
@@ -24,6 +25,8 @@ class RowAndColumnInfo extends StatelessWidget {
               children: <Widget>[
                 Center(child: CustomTitle(title: "说明")),
                 Text("Row是一个布局Widget，相当于是前端CSS3中弹性盒模型布局中：flex-direction: row;作用就是使内容水平方向排列。"),
+                Center(child: CustomTitle(title: "举个栗子")),
+                RowAndColumnDetail()
               ],
             ),
           ),
