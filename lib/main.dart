@@ -3,6 +3,7 @@ import './home/index.dart';
 import 'MaterialApp/index.dart';
 import 'Container/index.dart';
 import 'Scaffold/index.dart';
+import 'RowAndColumn/index.dart';
 
 // 主函数，入口函数
 void main() => runApp(MyApp());
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         "MaterialAppInfo": (BuildContext context) => MaterialAppInfo(title: 'MaterialAppInfo'),
         "ContainerInfo": (BuildContext context) => ContainerInfo(title: 'ContainerInfo'),
         "ScaffoldInfo": (BuildContext context) => ScaffoldInfo(title: 'ScaffoldInfo'),
+        "RowInfo": (BuildContext context) => RowAndColumnInfo(title: 'RowInfo'),
       },
       home: HomeList()
     );
