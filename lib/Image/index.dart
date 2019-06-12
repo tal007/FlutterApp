@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterapp/common/CustomTitle.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import './imagePicker.dart';
+import './imageBoxFit.dart';
 
 void main() => runApp(ImageWidgetInfo());
 
@@ -31,6 +32,7 @@ class ImageWidgetInfo extends StatelessWidget {
                 alignment: Alignment.center,
                 repeat: ImageRepeat.repeat,
                 // fit: BoxFit.cover,
+                // color: Colors.red,
                 filterQuality: FilterQuality.low,
               ),
               Divider(height: 20),
@@ -54,7 +56,8 @@ class ImageWidgetInfo extends StatelessWidget {
               Divider(height: 20),
               Center(child: CustomTitle(title: 'NetworkImage')),
               Image(
-                image: NetworkImage('https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=324769017,4079415235&fm=26&gp=0.jpg')
+                image: NetworkImage('https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=324769017,4079415235&fm=26&gp=0.jpg'),
+                // color: Colors.red,
               ),
               Center(child: CustomTitle(title: 'FadeInImage')),
               FadeInImage.assetNetwork(
@@ -62,7 +65,33 @@ class ImageWidgetInfo extends StatelessWidget {
                 image: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=324769017,4079415235&fm=26&gp=0.jpg',
                 width: 120,
                 fit: BoxFit.fitWidth,
-              )
+              ),
+              Divider(height: 20),
+              Center(child: CustomTitle(title: 'with color and colorBlendMode', fontSize: 16)),
+              Image(
+                image: AssetImage('images/logo.png'),
+                width: 100,
+                height: 100,
+                alignment: Alignment.center,
+                fit: BoxFit.cover,
+                color: Colors.blue,
+                colorBlendMode: BlendMode.colorBurn,
+              ),
+              Text("更多 color 与 colorBlendMode 的使用查看"),
+              FlatButton(
+                child: Text('https://blog.csdn.net/chenlove1/article/details/84574237', style: TextStyle(color: Colors.blue),),
+                onPressed: () => Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => WebviewScaffold(
+                    appBar: AppBar(
+                      title: Text('Flutter BlendMode混合模式详解'),
+                    ),
+                    url: 'https://blog.csdn.net/chenlove1/article/details/84574237'
+                  )
+                )),
+              ),
+              Divider(height: 20),
+              Center(child: CustomTitle(title: 'BoxFit')),
+              ImageBoxFit()
             ],
           ),
         ),
