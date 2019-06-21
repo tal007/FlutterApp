@@ -6,6 +6,8 @@ import 'Scaffold/index.dart';
 import 'RowAndColumn/index.dart';
 import 'Image/index.dart';
 import 'Text/index.dart';
+import 'Icon/index.dart';
+import 'RaisedButton/index.dart';
 
 // 主函数，入口函数
 void main() => runApp(MyApp());
@@ -26,6 +28,8 @@ class MyApp extends StatelessWidget {
         "RowInfo": (BuildContext context) => RowAndColumnInfo(title: 'RowInfo'),
         "ImageInfo": (BuildContext context) => ImageWidgetInfo(title: 'ImageInfo'),
         "TextInfo": (BuildContext context) => TextInfo(title: 'TextInfo'),
+        "IconInfo": (BuildContext context) => IconInfo(title: 'IconInfo'),
+        "RaisedButtonInfo": (BuildContext context) => RaisedButtonInfo(title: 'RaisedButtonInfo'),
       },
       home: HomeList()
     );

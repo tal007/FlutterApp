@@ -6,17 +6,16 @@ void main() => runApp(HomeList());
 
 var list = [
   "MaterialApp",
-  "Scaffold",
   "Container",
   "Row and Column",
   "Image",
   "Text",
   "Icon",
+  "RaisedButton",
   "Scaffold",
   "Appbar",
   "FlutterLogo",
-  "Placeholder",
-  "Scaffold",
+  "Placeholder"
 ];
 
 class HomeList extends StatelessWidget {
