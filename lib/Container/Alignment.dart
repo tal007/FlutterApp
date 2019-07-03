@@ -38,7 +38,7 @@ class _AlignmentInfo extends State<AlignmentInfo> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               RaisedButton(
-                child: Text('topLeft'),
+                child: Text('TL'),
                 onPressed: () => setState(() {
                   this.position = Alignment.topLeft;
                   this._xCrood = -1.0;
@@ -46,7 +46,7 @@ class _AlignmentInfo extends State<AlignmentInfo> {
                 }),
               ),
               RaisedButton(
-                child: Text('topCenter'),
+                child: Text('TC'),
                 onPressed: () => setState(() {
                   this.position = Alignment.topCenter;
                   this._xCrood = 0.0;
@@ -54,7 +54,7 @@ class _AlignmentInfo extends State<AlignmentInfo> {
                 }),
               ),
               RaisedButton(
-                child: Text('topRight'),
+                child: Text('TR'),
                 onPressed: () => setState(() {
                   this.position = Alignment.topRight;
                   this._xCrood = 1.0;
@@ -67,7 +67,7 @@ class _AlignmentInfo extends State<AlignmentInfo> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               RaisedButton(
-                child: Text('centerLeft'),
+                child: Text('CL'),
                 onPressed: () => setState(() {
                   this.position = Alignment.centerLeft;
                   this._xCrood = -1.0;
@@ -75,7 +75,7 @@ class _AlignmentInfo extends State<AlignmentInfo> {
                 }),
               ),
               RaisedButton(
-                child: Text('center'),
+                child: Text('CC'),
                 onPressed: () => setState(() {
                   this.position = Alignment.center;
                   this._xCrood = 0.0;
@@ -83,7 +83,7 @@ class _AlignmentInfo extends State<AlignmentInfo> {
                 }),
               ),
               RaisedButton(
-                child: Text('centerRight'),
+                child: Text('CR'),
                 onPressed: () => setState(() {
                   this.position = Alignment.centerRight;
                   this._xCrood = 1.0;
@@ -96,7 +96,7 @@ class _AlignmentInfo extends State<AlignmentInfo> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               RaisedButton(
-                child: Text('bottomLeft'),
+                child: Text('BL'),
                 onPressed: () => setState(() {
                   this.position = Alignment.bottomLeft;
                   this._xCrood = -1.0;
@@ -104,7 +104,7 @@ class _AlignmentInfo extends State<AlignmentInfo> {
                 }),
               ),
               RaisedButton(
-                child: Text('bottomCenter'),
+                child: Text('BC'),
                 onPressed: () => setState(() {
                   this.position = Alignment.bottomCenter;
                   this._xCrood = 0.0;
@@ -112,7 +112,7 @@ class _AlignmentInfo extends State<AlignmentInfo> {
                 }),
               ),
               RaisedButton(
-                child: Text('bottomRight'),
+                child: Text('BR'),
                 onPressed: () => setState(() {
                   this.position = Alignment.bottomRight;
                   this._xCrood = 1.0;

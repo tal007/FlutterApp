@@ -13,9 +13,7 @@ var list = [
   "Icon",
   "RaisedButton",
   "Scaffold",
-  "Appbar",
-  "FlutterLogo",
-  "Placeholder"
+  "Appbar"
 ];
 
 class HomeList extends StatelessWidget {

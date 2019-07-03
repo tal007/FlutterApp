@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         "MaterialAppInfo": (BuildContext context) => MaterialAppInfo(title: 'MaterialAppInfo'),
         "ContainerInfo": (BuildContext context) => ContainerInfo(title: 'ContainerInfo'),
         "ScaffoldInfo": (BuildContext context) => ScaffoldInfo(title: 'ScaffoldInfo'),
-        "RowInfo": (BuildContext context) => RowAndColumnInfo(title: 'RowInfo'),
+        "Row and ColumnInfo": (BuildContext context) => RowAndColumnInfo(title: 'Row and Column Info'),
         "ImageInfo": (BuildContext context) => ImageWidgetInfo(title: 'ImageInfo'),
         "TextInfo": (BuildContext context) => TextInfo(title: 'TextInfo'),
         "IconInfo": (BuildContext context) => IconInfo(title: 'IconInfo'),

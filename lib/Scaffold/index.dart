@@ -11,7 +11,7 @@ class ScaffoldInfo extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      bottomNavigationBar: Text('1'),
+      bottomNavigationBar: Text('bottomNavigationBar'),
       body: Container(
         padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
         child: DefaultTabController(
