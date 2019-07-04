@@ -13,7 +13,9 @@ var list = [
   "Icon",
   "RaisedButton",
   "Scaffold",
-  "Appbar"
+  "Appbar",
+  "Date Time Picker",
+  "TextField"
 ];
 
 class HomeList extends StatelessWidget {
