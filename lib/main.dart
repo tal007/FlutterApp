@@ -10,6 +10,7 @@ import 'Icon/index.dart';
 import 'RaisedButton/index.dart';
 import 'DateTimePicker//index.dart';
 import 'TextField/index.dart';
+import 'HTTP/index.dart';
 
 // 主函数，入口函数
 void main() => runApp(MyApp());
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         "RaisedButtonInfo": (BuildContext context) => RaisedButtonInfo(title: 'RaisedButtonInfo'),
         "Date Time PickerInfo": (BuildContext context) => DateTimePickerInfo(title: "Date Time Picker Info"),
         "TextFieldInfo": (BuildContext context) => TextFieldInfo(title: "TextField"),
+        "HTTPInfo": (BuildContext context) => HTTPInfo(title: "HTTP"),
       },
       home: HomeList()
     );
